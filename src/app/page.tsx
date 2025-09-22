@@ -67,7 +67,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="max-w-4xl mx-auto text-center text-secondary border-t border-slate-200 dark:border-slate-800 pt-8">
-        <p>© 2024 Ronald Wilson. All rights reserved.</p>
+        <p>© 2025 Ronald Wilson. All rights reserved.</p>
       </footer>
     </div>
   );
