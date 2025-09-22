@@ -1,6 +1,18 @@
-import Image from "next/image";
+import ProjectList from "@/components/ProjectList";
+import HackathonList from "@/components/HackathonList";
+import SkillsSection from "@/components/SkillsSection";
+import fs from 'fs';
+import path from 'path';
 
 export default function Home() {
+  const projectsFilePath = path.join(process.cwd(), 'projects.json');
+  const projectsData = fs.readFileSync(projectsFilePath, 'utf8');
+  const projects = JSON.parse(projectsData);
+
+  const hackathonsFilePath = path.join(process.cwd(), 'hackathons.json');
+  const hackathonsData = fs.readFileSync(hackathonsFilePath, 'utf8');
+  const hackathons = JSON.parse(hackathonsData);
+
   return (
     <div className="min-h-screen p-8 sm:p-12 md:p-16 lg:p-20">
       {/* Hero Section */}
@@ -66,47 +78,12 @@ export default function Home() {
 
 
       {/* Projects Section */}
-      <section className="max-w-4xl mx-auto mb-20">
-        <h2 className="text-3xl font-bold mb-8">Featured Projects</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          {[1, 2, 3].map((project) => (
-            <div
-              key={project}
-              className="p-6 rounded-xl border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900 transition-colors"
-            >
-              <div className="h-48 bg-slate-100 dark:bg-slate-800 rounded-lg mb-4"></div>
-              <h3 className="text-xl font-semibold mb-2">Project {project}</h3>
-              <p className="text-secondary">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptatum.
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <ProjectList projects={projects} />
 
-      {/* Skills Section */}
-      <section className="max-w-4xl mx-auto mb-20">
-        <h2 className="text-3xl font-bold mb-8">Technical Skills</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {['JavaScript', 'TypeScript', 'Node.js', 'Express.js', 'React.js', 'Next.js', 'Tailwind CSS', 'PostgreSQL', 'Redis', 'Kafka', 'Docker', 'Kubernetes', 'AWS Cloud'].map((skill) => {
-            const iconName = skill.toLowerCase().replace('.', '').replace(' ', '-');
-            return (
-              <div
-                key={skill}
-                className="p-4 rounded-lg border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900 transition-colors flex items-center gap-3"
-              >
-                <Image
-                  src={`/tech-logos/${iconName}.svg`}
-                  alt={skill}
-                  className="w-6 h-6"
-                />
-                <span className="text-secondary">{skill}</span>
-              </div>
-            );
-          })}
-        </div>
-      </section>
+      {/* Hackathons Section*/}
+      <HackathonList hackathons={hackathons} />
+
+      <SkillsSection />
 
 
       {/* Footer */}
