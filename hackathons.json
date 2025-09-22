@@ -6,7 +6,7 @@
     "award": "1st Place Winner",
     "description": "Developed a prototype for an AI-powered application to help farmers detect crop diseases early, using computer vision.",
     "link": "https://github.com/ronxldwilson/ai-for-good-hackathon",
-    "image": "/hackathon-images/ai-for-good.png"
+    "image": "/hackathon-images/image.png"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "award": "Best Use of API",
     "description": "Created a mobile app that provides personalized financial advice by integrating with multiple banking APIs.",
     "link": "https://github.com/ronxldwilson/fintech-disrupt-2023",
-    "image": "/hackathon-images/fintech-disrupt.png"
+    "image": "/hackathon-images/image.png"
   },
   {
     "id": 3,
@@ -24,6 +24,6 @@
     "award": "Finalist",
     "description": "Designed and deployed a scalable, serverless application on AWS, showcasing best practices in cloud-native development.",
     "link": "https://github.com/ronxldwilson/cloud-native-challenge",
-    "image": "/hackathon-images/cloud-native.png"
+    "image": "/hackathon-images/image.png"
   }
 ]
