@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="min-h-screen p-8 sm:p-12 md:p-16 lg:p-20">
@@ -94,7 +96,7 @@ export default function Home() {
                 key={skill}
                 className="p-4 rounded-lg border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900 transition-colors flex items-center gap-3"
               >
-                <img
+                <Image
                   src={`/tech-logos/${iconName}.svg`}
                   alt={skill}
                   className="w-6 h-6"
