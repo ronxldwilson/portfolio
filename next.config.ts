@@ -1,20 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  experimental: {
-    appDir: true, // Enable new App Router (required for Next 13+)
-  },
+  output: "export",
+  distDir: "dist",
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**",
-      },
-    ],
+    unoptimized: true,
   },
-  webpack: (config) => {
+  webpack: (config: any) => {
     config.resolve.fallback = { fs: false, module: false, path: false };
     return config;
   },
