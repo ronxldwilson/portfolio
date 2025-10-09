@@ -17,8 +17,8 @@ interface HackathonListProps {
 export default function HackathonList({ hackathons }: HackathonListProps) {
   return (
     <section className="max-w-4xl mx-auto mb-20 px-4 sm:px-0">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center sm:text-left">
-        Hackathons & Competitions
+      <h2 className="text-3xl sm:text-3xl font-bold mb-8 sm:text-left">
+        Hackathons
       </h2>
 
       <div className="space-y-8">

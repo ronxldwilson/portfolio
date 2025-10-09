@@ -28,17 +28,16 @@ export default function ProjectList({ projects }: ProjectListProps) {
   return (
     <section className="max-w-4xl mx-auto mb-20">
       <h2 className="text-3xl font-bold mb-8">Featured Projects</h2>
-      
+
       <div className="flex flex-wrap gap-2 mb-8">
         {allTags.map(tag => (
           <button
             key={tag}
             onClick={() => setActiveFilter(tag)}
-            className={`px-4 py-2 text-sm font-medium rounded-full transition-colors ${
-              activeFilter === tag
-                ? 'bg-primary text-white'
-                : 'bg-slate-100 dark:bg-slate-800 text-secondary hover:bg-slate-200 dark:hover:bg-slate-700'
-            }`}
+            className={`px-4 py-2 text-sm font-medium rounded-full transition-colors ${activeFilter === tag
+              ? 'bg-primary text-white'
+              : 'bg-slate-100 dark:bg-slate-800 text-secondary hover:bg-slate-200 dark:hover:bg-slate-700'
+              }`}
           >
             {tag}
           </button>
@@ -59,7 +58,7 @@ export default function ProjectList({ projects }: ProjectListProps) {
                 src={project.image}
                 alt={project.title}
                 fill
-                objectFit="cover"
+                objectFit="contain"
                 className="opacity-75"
               />
             </div>

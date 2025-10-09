@@ -1,58 +1,18 @@
 [
   {
     "id": 1,
-    "title": "E-commerce Platform",
-    "description": "A full-featured e-commerce platform with a modern, responsive design, built with Next.js and Stripe for payments.",
-    "image": "/project-images/image.png",
-    "link": "https://github.com/ronxldwilson/ecommerce-platform",
-    "tags": ["Next.js", "React", "Stripe", "Tailwind CSS"]
+    "title": "Tiny Notepad",
+    "description": "Tiny Notepad is a lightweight, distraction-free interface to chat with locally running Ollama models. Designed for speed and simplicity, it lets you generate text, save timestamped notes, and tweak generation settings all in a sleek, minimal GUI.",
+    "image": "/project-images/tiny-notepad.jpg",
+    "link": "https://github.com/ronxldwilson/tiny-notepad",
+    "tags": ["Python", "PyPi", "AI", "Ollama"]
   },
   {
     "id": 2,
-    "title": "Real-time Chat Application",
-    "description": "A scalable, real-time chat application using WebSockets, Node.js, and Redis for message caching.",
-    "image": "/project-images/image.png",
-    "link": "https://github.com/ronxldwilson/chat-app",
-    "tags": ["Node.js", "WebSockets", "Redis", "Express.js"]
-  },
-  {
-    "id": 3,
-    "title": "Cloud-Native Microservices",
-    "description": "An application demonstrating microservice architecture, deployed on Kubernetes with CI/CD pipelines.",
-    "image": "/project-images/image.png",
-    "link": "https://github.com/ronxldwilson/microservices-demo",
-    "tags": ["Docker", "Kubernetes", "Kafka", "Go"]
-  },
-  {
-    "id": 4,
-    "title": "Sentiment Analysis API",
-    "description": "A REST API that performs sentiment analysis on text, built with Python and deployed as a serverless function.",
-    "image": "/project-images/image.png",
-    "link": "https://github.com/ronxldwilson/sentiment-api",
-    "tags": ["Python", "Machine Learning", "Data Science", "Serverless"]
-  },
-  {
-    "id": 5,
-    "title": "AI-Powered Recommendation Engine",
-    "description": "Built a content recommendation engine using collaborative filtering. Processes user interaction data to suggest relevant articles.",
-    "image": "/project-images/image.png",
-    "link": "https://github.com/ronxldwilson/recommendation-engine",
-    "tags": ["Machine Learning", "Python", "Pandas", "Scikit-learn"]
-  },
-  {
-    "id": 6,
-    "title": "Image Recognition Service",
-    "description": "Developed a microservice for object detection in images using a pre-trained TensorFlow model. Exposed via a REST API.",
-    "image": "/project-images/image.png",
-    "link": "https://github.com/ronxldwilson/image-recognition-service",
-    "tags": ["Deep Learning", "TensorFlow", "Python", "Flask", "Docker"]
-  },
-  {
-    "id": 7,
-    "title": "Interactive Data Visualization Dashboard",
-    "description": "A web-based dashboard for visualizing complex datasets using D3.js and React, providing interactive charts and graphs.",
-    "image": "/project-images/image.png",
-    "link": "https://github.com/ronxldwilson/data-viz-dashboard",
-    "tags": ["React", "D3.js", "Data Visualization", "TypeScript"]
+    "title": "DashAway",
+    "description": "Chrome extension to remove all em dashes and other annoying formattings in the output of popular AI tools.",
+    "image": "/project-images/dashaway.png",
+    "link": "https://github.com/ronxldwilson/dashaway",
+    "tags": ["Chrome Extension", "Javascript"]
   }
 ]

@@ -1,13 +1,12 @@
 'use client';
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 export default function HeaderSection() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
-
-  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const router = useRouter();
 
   const navLinks = [
     { name: 'Home', href: '/' },
@@ -20,14 +19,16 @@ export default function HeaderSection() {
   const handleNavClick = (href: string) => {
     if (href.startsWith('#')) {
       if (pathname !== '/') {
-        // Navigate to home and scroll to section
-        window.location.href = '/' + href;
+        // Navigate to home page + section
+        router.push('/' + href);
       } else {
-        // Smooth scroll on home page
+        // Smooth scroll on the same page
         const target = document.querySelector(href);
         if (target) {
-          const headerOffset = 80; // Adjust based on your header height in px
-          const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+          const header = document.querySelector('header');
+          const headerOffset = header ? header.offsetHeight : 80;
+          const elementPosition =
+            target.getBoundingClientRect().top + window.pageYOffset;
           const offsetPosition = elementPosition - headerOffset;
 
           window.scrollTo({
@@ -35,14 +36,17 @@ export default function HeaderSection() {
             behavior: 'smooth',
           });
         }
-
       }
+      // Close mobile menu after short delay
+      setTimeout(() => setMenuOpen(false), 50);
     } else {
-      // Regular navigation (e.g. Resume)
-      window.location.href = href;
+      // External navigation
+      router.push(href);
+      setMenuOpen(false);
     }
-    setMenuOpen(false);
   };
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
     <header className="w-full sticky top-0 bg-white/70 dark:bg-slate-900/70 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 z-50">
