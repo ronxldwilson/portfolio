@@ -12,7 +12,7 @@ export default function HeroSeciton() {
                     {/* Intro Text */}
                     <div className="text-left">
                         <h1 className="text-2xl md:text-4xl font-bold mb-4  ">
-                            Hi, I'm Ronald Wilson
+                            Hi, I&apos;m Ronald Wilson
                         </h1>
                         <p className="text-lg md:text-2xl text-secondary mb-6">
                             I love <span className="text-primary font-semibold">AI</span> and
