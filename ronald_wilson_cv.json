@@ -27,7 +27,7 @@
             "achievements": [
                 "Collaborated with major US utility company to ensure seamless IT infrastructure management.",
                 "Analyzed 30+ security patch notes to mitigate critical vulnerabilities.",
-                "Resolved 20+ high-priority incidents, saving $2M in downtime costs.",
+                "Resolved 20+ high-priority incidents, saving $1M in downtime costs.",
                 "Conducted root cause analysis for 15+ critical incidents, reducing recurrence by 30%.",
                 "Implemented monitoring across 700+ servers, achieving 99.9% uptime."
             ]
@@ -80,17 +80,12 @@
             "degree": "B.Sc in Computer Science, Mathematics and Statistics",
             "duration": "June 2019 - May 2022",
             "details": "CGPA: 8.81/10. Organized Web3 conference, well-versed in data analytics, ML, statistical modeling."
-        },
-        {
-            "institution": "Buildspace Nights & Weekends s5",
-            "details": "Organized events for Better Together, collaborated globally on mental health projects."
         }
     ],
     "certifications": [
         "ServiceNow Certified Application Developer",
         "ServiceNow Certified System Administrator",
-        "SAP BTP Certification",
-        "SAP BASIS Administrator (Database High Availability and Disaster Recovery)",
+        "SAP BASIS Administrator",
         "AI For Everyone"
     ],
     "skills": [
@@ -128,13 +123,12 @@
     "languages": [
         "English (Fluent)",
         "Hindi (Fluent)",
-        "German (Proficient)"
+        "German (Beginner A2)"
     ],
     "interests": [
         "Chess",
         "History",
         "Philosophy",
-        "Sociology",
         "Psychology"
     ]
 }

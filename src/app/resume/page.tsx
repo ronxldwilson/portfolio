@@ -20,18 +20,6 @@ export default function Resume() {
           </div>
         </section>
 
-        {/* Education Section */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-6">Education</h2>
-          {cvData.education.map((edu, index) => (
-            <div key={index} className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg border border-slate-200 dark:border-slate-700 mb-4">
-              <h3 className="text-xl font-semibold mb-1">{edu.degree}</h3>
-              <p className="text-secondary mb-2">{edu.institution}, {edu.duration}</p>
-              <p className="text-secondary">{edu.details}</p>
-            </div>
-          ))}
-        </section>
-
         {/* Work Experience Section */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Work Experience</h2>
@@ -68,6 +56,18 @@ export default function Resume() {
               <h3 className="text-xl font-semibold mb-1">{intern.role}</h3>
               <p className="text-secondary mb-2">{intern.organization} | {intern.duration}</p>
               <p className="text-secondary">{intern.details}</p>
+            </div>
+          ))}
+        </section>
+
+        {/* Education Section */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">Education</h2>
+          {cvData.education.map((edu, index) => (
+            <div key={index} className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg border border-slate-200 dark:border-slate-700 mb-4">
+              <h3 className="text-xl font-semibold mb-1">{edu.degree}</h3>
+              <p className="text-secondary mb-2">{edu.institution}, {edu.duration}</p>
+              <p className="text-secondary">{edu.details}</p>
             </div>
           ))}
         </section>
