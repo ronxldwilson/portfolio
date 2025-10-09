@@ -28,21 +28,21 @@ export default function HeroSeciton() {
                         {/* CTAs */}
                         <div className="flex flex-col items-center sm:items-start gap-6 mt-6">
                             {/* Buttons */}
-                            <div className="flex flex-row sm:flex-row items-center gap-4">
+                            <div className="flex flex-row flex-wrap sm:flex-nowrap items-center gap-4">
                                 <a
                                     href={`mailto:ronxldwilson@gmail.com?subject=${encodeURIComponent(
                                         'Inquiry from Portfolio Website'
                                     )}&body=${encodeURIComponent(
                                         'Hi Ronald,\n\nI came across your portfolio and would like to get in touch regarding...'
                                     )}`}
-                                    className="bg-gradient-to-r from-blue-600 to-blue-500 text-white px-8 py-3 rounded-full shadow-md hover:from-blue-700 hover:to-blue-600 transition-all duration-200 font-medium"
+                                    className="bg-gradient-to-r from-blue-600 to-blue-500 text-white px-4 sm:px-8 py-2 sm:py-3 rounded-full shadow-md hover:from-blue-700 hover:to-blue-600 transition-all duration-200 font-medium text-sm sm:text-base whitespace-nowrap"
                                 >
                                     Get in Touch
                                 </a>
 
                                 <a
                                     href="/resume"
-                                    className="border border-slate-400 text-slate-700 dark:text-slate-200 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 px-6 py-3 rounded-full transition-all duration-200 font-medium"
+                                    className="border border-slate-400 text-slate-700 dark:text-slate-200 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 px-4 sm:px-6 py-2 sm:py-3 rounded-full transition-all duration-200 font-medium text-sm sm:text-base whitespace-nowrap"
                                 >
                                     View Resume
                                 </a>
@@ -53,6 +53,7 @@ export default function HeroSeciton() {
                                 <Socials />
                             </div>
                         </div>
+
                     </div>
 
                     {/* Profile Image */}
