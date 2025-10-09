@@ -14,7 +14,7 @@ export default function HeroSeciton() {
                         <h1 className="text-2xl md:text-4xl font-bold mb-4  ">
                             Hi, I&apos;m Ronald Wilson
                         </h1>
-                        <p className="text-lg md:text-2xl text-secondary mb-6">
+                        <p className="text-lg text-secondary mb-6">
                             I love <span className="text-primary font-semibold">AI</span> and
                             <span className="text-primary font-semibold"> scalable web development</span> -
                             building intelligent, modern applications that perform beautifully at scale.
