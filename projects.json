@@ -48,5 +48,18 @@
       "Chrome Extension",
       "Javascript"
     ]
+  },
+  {
+    "id": 5,
+    "title": "Whatsapp Encrypter",
+    "description": "Chrome extension that encrypts your WhatsApp Messages using custom encryption algorithms. It ensures that your messages are secure and private, protecting them from unauthorized access post leak",
+    "image": "/project-images/whatsapp.png",
+    "link": "https://github.com/ronxldwilson/WhatsApp-Encrypter",
+    "tags": [
+      "Chrome Extension",
+      "Javascript",
+      "Encryption",
+      "Cyber Security"
+    ]
   }
 ]
