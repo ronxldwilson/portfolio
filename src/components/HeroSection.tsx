@@ -33,7 +33,7 @@ export default function HeroSeciton() {
                                     href={`mailto:ronxldwilson@gmail.com?subject=${encodeURIComponent(
                                         'Inquiry from Portfolio Website'
                                     )}&body=${encodeURIComponent(
-                                        'Hi Ronald,\n\nI came across your portfolio and would like to get in touch regarding...'
+                                        'Hi Ronald,\n\nI came across your portfolio and would like to get in touch regarding '
                                     )}`}
                                     className="bg-gradient-to-r from-blue-600 to-blue-500 text-white px-4 sm:px-8 py-2 sm:py-3 rounded-full shadow-md hover:from-blue-700 hover:to-blue-600 transition-all duration-200 font-medium text-sm sm:text-base whitespace-nowrap"
                                 >

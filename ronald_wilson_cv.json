@@ -13,11 +13,11 @@
             "role": "Co-Founder & CTO",
             "duration": "Sept 2024 - June 2025",
             "achievements": [
-                "Spearheaded the design, development, and implementation of a holistic mental health platform.",
-                "Developed responsive web apps using Next.js and Supabase for therapy session management.",
-                "Architected scalable infrastructure with Supabase authentication and real-time features.",
-                "Built AI-based multimode training software for therapists.",
-                "Gathered patient and professional feedback for user-centered platform development."
+                "Led the end-to-end development of a holistic mental wellness platform from concept to launch.",
+                "Engineered responsive, scalable web applications using modern frameworks and cloud technologies.",
+                "Designed robust authentication, data management, and real-time communication systems.",
+                "Built AI-driven tools to enhance therapist training and improve treatment insights.",
+                "Drove continuous improvement through user research and iterative product design."
             ]
         },
         {
@@ -25,11 +25,11 @@
             "role": "SAP BASIS Consultant",
             "duration": "Jun 2023 - Sept 2024",
             "achievements": [
-                "Collaborated with major US utility company to ensure seamless IT infrastructure management.",
-                "Analyzed 30+ security patch notes to mitigate critical vulnerabilities.",
-                "Resolved 20+ high-priority incidents, saving $1M in downtime costs.",
-                "Conducted root cause analysis for 15+ critical incidents, reducing recurrence by 30%.",
-                "Implemented monitoring across 700+ servers, achieving 99.9% uptime."
+                "Supported large-scale IT operations for enterprise clients, ensuring high system reliability.",
+                "Strengthened infrastructure security through proactive vulnerability analysis and patch management.",
+                "Delivered critical incident resolutions that minimized downtime and operational risk.",
+                "Conducted performance assessments and implemented optimizations to improve system stability.",
+                "Deployed scalable monitoring systems to achieve near-perfect service availability."
             ]
         },
         {
@@ -37,10 +37,10 @@
             "role": "ServiceNow Developer",
             "duration": "Aug 2022 - Jun 2023",
             "achievements": [
-                "Delivered 20+ DevSecOps stories, improving change/release processes by 30%.",
-                "Developed automated testing frameworks for 100+ custom features.",
-                "Created enhanced risk assessment model improving accuracy by 40%.",
-                "Saved ~45,000 developer hours by streamlining change management."
+                "Developed and maintained enterprise-grade automation workflows within the ServiceNow ecosystem.",
+                "Enhanced change and release management processes through data-driven DevSecOps solutions.",
+                "Created reusable testing and risk evaluation frameworks that improved delivery efficiency.",
+                "Streamlined IT operations by implementing process improvements with measurable impact."
             ]
         }
     ],
@@ -58,15 +58,15 @@
             "role": "Thread Lead",
             "duration": "Sept 2022 - Nov 2023",
             "details": "Directed Impact Day activities, guided 200+ volunteers across 4 locations."
-        },
+        }
+    ],
+    "internships": [
         {
             "organization": "WeJump",
             "role": "Digital Art Intern",
             "duration": "Apr 2022 - May 2022",
             "details": "Created eBooks of stories by underprivileged children, led volunteers, designed digital assets."
-        }
-    ],
-    "internships": [
+        },
         {
             "organization": "Inception Wave",
             "role": "Market Research Intern",
