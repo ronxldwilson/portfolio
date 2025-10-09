@@ -13,6 +13,19 @@
     ]
   },
   {
+    "id": 4,
+    "title": "3D Sudoku",
+    "description": "A 3 dimensional version of the classic Sudoku puzzle game, where players fill a 9 x 9 grid with numbers while adhering to traditional Sudoku rules. The game offers an immersive experience with interactive 3D graphics, allowing players to rotate and view the puzzle from different angles.",
+    "image": "/project-images/3dsudoku.png",
+    "link": "https://3-d-sudoku.vercel.app/",
+    "tags": [
+      "Three.js",
+      "Next.js",
+      "Game Development",
+      "Javascript"
+    ]
+  },
+  {
     "id": 2,
     "title": "Tiny Notepad",
     "description": "Tiny Notepad is a lightweight, distraction-free interface to chat with locally running Ollama models. Designed for speed and simplicity, it lets you generate text, save timestamped notes, and tweak generation settings all in a sleek, minimal GUI.",
