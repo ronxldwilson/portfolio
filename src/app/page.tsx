@@ -1,6 +1,7 @@
 import ProjectList from "@/components/ProjectList";
 import HackathonList from "@/components/HackathonList";
 import SkillsSection from "@/components/SkillsSection";
+import HeaderSection from "@/components/HeaderSection";
 import Socials from "@/components/Socials";
 import fs from 'fs';
 import path from 'path';
@@ -14,69 +15,80 @@ export default function Home() {
   const hackathonsData = fs.readFileSync(hackathonsFilePath, 'utf8');
   const hackathons = JSON.parse(hackathonsData);
 
-  return (
+  return (<>
+    <HeaderSection />
     <div className="min-h-screen p-8 sm:p-12 md:p-16 lg:p-20">
-      {/* Hero Section */}
-      <section className="max-w-4xl mx-auto text-center mb-20">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">
-          Ronald Wilson
-        </h1>
-        <p className="text-xl md:text-2xl text-secondary mb-8">
-          Full Stack Developer building modern web experiences
-        </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
-          <a
-            href="#contact"
-            className="bg-primary text-white px-8 py-3 rounded-full hover:bg-primary-hover transition-colors font-medium"
-          >
-            Get in Touch
-          </a>
-          <a
-            href="/resume"
-            className="text-secondary hover:text-primary transition-colors font-medium border border-secondary hover:border-primary px-4 py-2 rounded-full"
-          >
-            View Resume
-          </a>
-          <Socials />
-        </div>
-      </section>
+      {/* Intro Section (Combined Hero + About) */}
+      <section className="max-w-4xl mx-auto mb-24">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
 
-      {/* About Section */}
-      <section className="max-w-4xl mx-auto mb-20">
-        <h2 className="text-3xl font-bold mb-8 text-left">About Me</h2>
-        <div className="flex flex-col md:flex-row items-start gap-8">
-          <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 mx-auto md:mx-0">
-            <img
-              src="/Ron.jpg" // <- replace with your image path
-              alt="Ronald Wilson"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          {/* Intro Text */}
           <div className="text-left">
-            <h3 className="text-2xl font-semibold mb-3">Hi, I'm Ronald Wilson 👋</h3>
-            <p className="text-lg text-secondary leading-relaxed mb-3">
-              I’m a developer who loves blending <span className="text-primary font-medium">AI</span> and
-              <span className="text-primary font-medium"> scalable web development</span> to create meaningful,
-              high-performance digital experiences. I enjoy turning complex ideas into clean, reliable,
-              and user-friendly products.
+            <h1 className="text-3xl md:text-4xl font-bold mb-4  ">
+              Hi, I'm Ronald Wilson
+            </h1>
+            <p className="text-xl md:text-2xl text-secondary mb-6">
+              I love <span className="text-primary font-semibold">AI</span> and
+              <span className="text-primary font-semibold"> scalable web development</span> -
+              building intelligent, modern applications that perform beautifully at scale.
             </p>
-            <p className="text-lg text-secondary leading-relaxed">
-              My current focus is building intelligent, cloud-native applications with React, Next.js,
-              and modern AI frameworks — all while keeping scalability, design, and user impact at the core.
+            <p className="text-lg text-secondary leading-relaxed mb-8 max-w-2xl">
+              I specialize in Next.js, and cloud-native systems, with a focus on
+              turning complex ideas into simple, elegant experiences. My goal is to create
+              products that are as enjoyable to use as they are powerful behind the scenes.
             </p>
-          </div>
-        </div>
-      </section>
 
+            {/* CTAs */}
+            <div className="flex flex-col items-center sm:items-start gap-6 mt-6">
+              {/* Buttons */}
+              <div className="flex flex-col sm:flex-row items-center gap-4">
+                <a
+                  href="mailto:ronxldwilson@gmail.com"
+                  className="bg-gradient-to-r from-blue-600 to-blue-500 text-white px-8 py-3 rounded-full shadow-md hover:from-blue-700 hover:to-blue-600 transition-all duration-200 font-medium"
+                >
+                  Get in Touch
+                </a>
+                <a
+                  href="/resume"
+                  className="border border-slate-400 text-slate-700 dark:text-slate-200 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 px-6 py-3 rounded-full transition-all duration-200 font-medium"
+                >
+                  View Resume
+                </a>
+              </div>
+
+              {/* Socials */}
+              <div className="mt-4">
+                <Socials />
+              </div>
+            </div>
+          </div>
+
+            {/* Profile Image */}
+            <div className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden flex-shrink-0">
+              <img
+                src="/Ron.jpg" // replace with your image path
+                alt="Ronald Wilson"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+      </section>
 
 
       {/* Projects Section */}
-      <ProjectList projects={projects} />
+      <section id="projects">
+        <ProjectList projects={projects} />
+      </section>
 
       {/* Hackathons Section*/}
-      <HackathonList hackathons={hackathons} />
+      <section id="hackathons">
+        <HackathonList hackathons={hackathons} />
+      </section>
 
-      <SkillsSection />
+      {/* Skills Section */}
+      <section id="skills">
+        <SkillsSection />
+      </section>
 
 
       {/* Footer */}
@@ -84,5 +96,6 @@ export default function Home() {
         <p>© 2024 Ronald Wilson. All rights reserved.</p>
       </footer>
     </div>
+  </>
   );
 }
