@@ -40,19 +40,6 @@
   },
   {
     "id": 30,
-    "title": "Tiny Notepad",
-    "description": "Tiny Notepad is a lightweight, distraction-free interface to chat with locally running Ollama models. Designed for speed and simplicity, it lets you generate text, save timestamped notes, and tweak generation settings all in a sleek, minimal GUI.",
-    "image": "/project-images/tiny-notepad.jpg",
-    "link": "https://github.com/ronxldwilson/tiny-notepad",
-    "tags": [
-      "Python",
-      "PyPi",
-      "AI",
-      "Ollama"
-    ]
-  },
-  {
-    "id": 31,
     "title": "AI in the Shell",
     "description": "AI in the shell is a command-line tool that integrates with Ollama's local LLMs to bring AI capabilities directly to your terminal. It allows users to interact with AI models, generate text, and perform various tasks using simple shell commands. The ultimate of the project is to build an AI agent that act as system administrator to help with various tasks and be autonomously deployed on a server to manage it.",
     "image": "/project-images/ai-in-the-shell.png",
@@ -66,6 +53,21 @@
       "Terminal Tools"
     ]
   },
+  {
+    "id": 31,
+    "title": "Tiny Notepad",
+    "description": "Tiny Notepad is a lightweight, distraction-free interface to chat with locally running Ollama models. Designed for speed and simplicity, it lets you generate text, save timestamped notes, and tweak generation settings all in a sleek, minimal GUI.",
+    "image": "/project-images/tiny-notepad.jpg",
+    "link": "https://github.com/ronxldwilson/tiny-notepad",
+    "tags": [
+      "Python",
+      "PyPi",
+      "AI",
+      "Ollama",
+      "CLI"
+    ]
+  },
+  
   {
     "id": 40,
     "title": "DashAway",
