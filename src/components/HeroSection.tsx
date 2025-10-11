@@ -11,19 +11,22 @@ export default function HeroSeciton() {
 
                     {/* Intro Text */}
                     <div className="text-left">
-                        <h1 className="text-2xl md:text-4xl font-bold mb-4  ">
+                        <h1 className="text-2xl md:text-4xl font-bold mb-4">
                             Hi, I&apos;m Ronald Wilson
                         </h1>
                         <p className="text-lg text-secondary mb-6">
-                            I love <span className="text-primary font-semibold">AI</span> and
-                            <span className="text-primary font-semibold"> scalable web development</span> -
-                            building intelligent, modern applications that perform beautifully at scale.
+                            I&apos;m an <span className="text-primary font-semibold">autodidact in the making </span> 
+                            driven by curiosity, creativity, and the desire to push what&apos;s possible with
+                            <span className="text-primary font-semibold"> AI</span> and
+                            <span className="text-primary font-semibold"> scalable web systems</span>.
                         </p>
                         <p className="text-lg text-secondary leading-relaxed mb-8 max-w-2xl">
-                            I specialize in Next.js, and cloud-native systems, with a focus on
-                            turning complex ideas into simple, elegant experiences. My goal is to create
-                            products that are as enjoyable to use as they are powerful behind the scenes.
+                            I specialize in <span className="text-primary font-semibold">Next.js</span> and
+                            <span className="text-primary font-semibold"> cloud-native development</span>,
+                            transforming complex ideas into seamless, intelligent experiences that perform beautifully at scale. <br/>
+                            Beyond building, I love sharing what I learn and empowering others to build, ship, and think independently.
                         </p>
+
 
                         {/* CTAs */}
                         <div className="flex flex-col items-center sm:items-start gap-6 mt-6">
